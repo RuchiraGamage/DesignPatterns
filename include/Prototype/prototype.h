@@ -22,7 +22,6 @@ struct Address
 		oss << " " << addr.roomNo << " " << addr.street << " " << addr.city << endl;
 		return oss;
 	}
-
 };
 
 struct Person {
@@ -54,6 +53,9 @@ struct Person {
 	}
 
 };
+//shallow copy is always not agood option as if there is a pointer kind of thing it can lead to many problems
+//(if you copy pointer instead of its content it may create more problems)
+//deep copy is copy the content to a new memory location can be more safe
 
 struct PersonFactory
 {
@@ -65,7 +67,7 @@ struct PersonFactory
 		return newEmployeee(name, roomNo, aux);
 	}
 private:
-	static unique_ptr<Person> newEmployeee(string name,int roomNo,Person proto){
+	static unique_ptr<Person> newEmployeee(string name,int roomNo,Person& proto){
 		auto result= make_unique<Person>(proto);
 		result->name = name;
 		result->work_address->roomNo = roomNo;
@@ -73,6 +75,19 @@ private:
 	}
 
 };
+//c++ all the static iplimentations has to be outside of the class
 Person PersonFactory::main{ "",new Address{"galle road","colombo",0} };
 Person PersonFactory::aux{ "",new Address{ "kandy road","colombo",0 } };
+
+
+//add below part to main to run above code also make sure to include header
+
+/*
+//main clause related to this implimentation
+int main()
+{
+auto auxEmployee1=PersonFactory::auxOfficeEmployee("kamal", 10);
+auto mainEmployee1 = PersonFactory::mainOfficeEmployee("kusum", 11);
+}
+*/
 
