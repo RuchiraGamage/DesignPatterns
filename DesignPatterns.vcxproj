@@ -132,11 +132,16 @@
     <ClInclude Include="include\Factory\Point.h" />
     <ClInclude Include="include\Prototype\prototype.h" />
     <ClInclude Include="include\Prototype\serialization.h" />
+    <ClInclude Include="include\Singleton\Singleton.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="codebase\src\main.cpp" />
-    <ClCompile Include="codebase\src\Person.cpp" />
-    <ClCompile Include="codebase\src\PersonBuilder.cpp" />
+    <ClCompile Include="include\Builder\Person.cpp" />
+    <ClCompile Include="include\Builder\PersonBuilder.cpp" />
+    <ClCompile Include="include\Singleton\Singleton.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\Singleton\cityPopulation.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,8 @@
+Colombo
+2000000
+Galle
+1000000
+Kandy
+1300000
+Matara
+1200000

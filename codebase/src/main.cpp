@@ -60,36 +60,40 @@ private:
 };
 
 
+/*
 int main()
 {
-	Contact jane;
-	jane.name = "jane";
-	jane.addr=Address{ "colombo road","Galle",10};
+Contact jane;
+jane.name = "jane";
+jane.addr=Address{ "colombo road","Galle",10};
 
-	auto clone=[](Contact c)
-	{
-		ostringstream oss;
-		boost::archive::text_oarchive oa(oss);
-		oa << c;
+auto clone=[](Contact c)
+{
+ostringstream oss;
+boost::archive::text_oarchive oa(oss);
+oa << c;
 
-		string s = oss.str();
-		Contact result;
-		istringstream iss(s);
-		boost::archive::text_iarchive ia(iss);
-		ia >> result;
-		return result;
-	};
+string s = oss.str();
+Contact result;
+istringstream iss(s);
+boost::archive::text_iarchive ia(iss);
+ia >> result;
+return result;
+};
 
-	Contact john = clone(jane);
+Contact john = clone(jane);
 
-	john.name = "john";
-	john.addr.suit = 125;
+john.name = "john";
+john.addr.suit = 125;
 
-	cout << jane << john << endl;
+cout << jane << john << endl;
 
-	getchar();
-	return 0;
+getchar();
+return 0;
 }
+
+*/
+
 
 /*
 

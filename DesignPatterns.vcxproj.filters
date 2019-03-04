@@ -42,16 +42,25 @@
     <ClInclude Include="include\Prototype\serialization.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Singleton\Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="codebase\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="codebase\src\Person.cpp">
+    <ClCompile Include="include\Singleton\Singleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="codebase\src\PersonBuilder.cpp">
+    <ClCompile Include="include\Builder\Person.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="include\Builder\PersonBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="include\Singleton\cityPopulation.txt" />
   </ItemGroup>
 </Project>
