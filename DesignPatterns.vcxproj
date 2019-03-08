@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="codebase\src\main.cpp" />
+    <ClCompile Include="include\Adapter\Adapter.cpp" />
     <ClCompile Include="include\Builder\Person.cpp" />
     <ClCompile Include="include\Builder\PersonBuilder.cpp" />
     <ClCompile Include="include\Singleton\Singleton.cpp" />
