@@ -45,6 +45,9 @@
     <ClInclude Include="include\Singleton\Singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Bridge\Bridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="codebase\src\main.cpp">
@@ -60,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="include\Adapter\Adapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Bridge\Bridge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

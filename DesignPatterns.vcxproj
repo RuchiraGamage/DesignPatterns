@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\Bridge\Bridge.h" />
     <ClInclude Include="include\BuilderTheory\Creational_Builder.h" />
     <ClInclude Include="include\BuilderTheory\ClassModificationRule.h" />
     <ClInclude Include="include\Builder\Person.h" />
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClCompile Include="codebase\src\main.cpp" />
     <ClCompile Include="include\Adapter\Adapter.cpp" />
+    <ClCompile Include="include\Bridge\Bridge.cpp" />
     <ClCompile Include="include\Builder\Person.cpp" />
     <ClCompile Include="include\Builder\PersonBuilder.cpp" />
     <ClCompile Include="include\Singleton\Singleton.cpp" />
