@@ -48,6 +48,18 @@
     <ClInclude Include="include\Bridge\Bridge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\composite\Composite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\composite\Neurons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\composite\ShapeComposite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Decorator\Decorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="codebase\src\main.cpp">
@@ -66,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="include\Bridge\Bridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\composite\Composite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

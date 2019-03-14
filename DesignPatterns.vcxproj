@@ -130,6 +130,10 @@
     <ClInclude Include="include\Builder\PersonAddreeBuilder.h" />
     <ClInclude Include="include\Builder\PersonBuilder.h" />
     <ClInclude Include="include\Builder\PersonJobBuilder.h" />
+    <ClInclude Include="include\composite\Composite.h" />
+    <ClInclude Include="include\composite\Neurons.h" />
+    <ClInclude Include="include\composite\ShapeComposite.h" />
+    <ClInclude Include="include\Decorator\Decorator.h" />
     <ClInclude Include="include\Factory\Point.h" />
     <ClInclude Include="include\Prototype\prototype.h" />
     <ClInclude Include="include\Prototype\serialization.h" />
@@ -141,6 +145,7 @@
     <ClCompile Include="include\Bridge\Bridge.cpp" />
     <ClCompile Include="include\Builder\Person.cpp" />
     <ClCompile Include="include\Builder\PersonBuilder.cpp" />
+    <ClCompile Include="include\composite\Composite.cpp" />
     <ClCompile Include="include\Singleton\Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>

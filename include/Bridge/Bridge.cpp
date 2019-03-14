@@ -21,11 +21,13 @@ void Person::greed()
 	impl->greed(this);
 }
 
+/*
 int main()
 {
-	Person p;
-	p.name = "kamal";
-	p.greed();
-	getchar();
-	return 0;
+Person p;
+p.name = "kamal";
+p.greed();
+getchar();
+return 0;
 }
+*/
